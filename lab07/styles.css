@@ -1,0 +1,31 @@
+body {
+    background-color: #F9F8F4;
+    color: #544E4E;
+    font-family: Verdana, sans-serif;
+}
+
+.evenrow {
+    background-color:lightgrey
+}
+
+h1, h2 {   
+    color:#495E48;
+}
+
+a {
+    color:#5C715E; 
+} 
+
+nav {
+    background-color: #A79F9F;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+nav a {
+    color: #524E4E;
+}
+
+nav a:hover {
+    background-color: #C5C0BF;
+}
