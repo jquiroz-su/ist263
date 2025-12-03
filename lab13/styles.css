@@ -17,13 +17,13 @@ a {
 } 
 
 nav {
-    background-color: #A79F9F;
+    background-color: #d8d5d5;
     padding: 10px;
     margin-bottom: 30px;
 }
 
 nav a {
-    color: #524E4E;
+    color: black;
 }
 
 nav a:hover {
