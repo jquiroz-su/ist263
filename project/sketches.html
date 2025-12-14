@@ -7,27 +7,38 @@
     
         <style>
             .gallery {
-                margin: 20px;
-                display: grid;
-                grid-gap: 10px;
-                grid-template-columns: repeat(3, minmax(200px, 1fr));
-                grid-auto-rows: 250px, 150px;
-                
+                column-count: 4;
+                column-gap: 15px;
+                padding: 20px;
             }
 
-            .item {
-                img {
-                    width: 100%;
+            .gallery img {
+                width: 100%;
+                margin-bottom: 15px; 
+                object-fit: cover;
+                display: block;
+            }
+
+            @media (max-width: 900px) {
+                .gallery {
+                    column-count: 2;
                 }
             }
+
+             @media (max-width: 600px) {
+                .gallery {
+                    column-count: 1;
+                }
+            }
+            
 
         </style>
     </head> 
     <body>
         <header class="header">
-            <a href="home.html" class="logo">jareline <i>quiroz</i>.</a>
+            <a href="index.html" class="logo">jareline <i>quiroz</i>.</a>
             <nav>
-                <a href="home.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="contact.html">Contact</a>
             </nav>

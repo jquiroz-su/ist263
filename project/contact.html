@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Contact Page</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    <style>
+        .contact {
+            height: 25vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+            margin-bottom: 10px;
+           
+        }
+
+        .contact-content {
+            width: 100%;
+        }
+
+        .contact-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            font-family: "Inter", sans-serif;
+            font-weight: 500;
+        }
+
+        .contact-content h2 {
+            font-size: 1rem;
+            font-weight: 400;
+            color: rgb(51, 51, 51);
+            max-width: 600px;
+            line-height: 1.75;
+            margin: 0 auto;
+            text-align: center;
+            font-family: "Inter", sans-serif;
+        }
+
+
+        .container {
+            margin-top: -10px;
+            display: flex;
+            justify-content: center;   
+        }
+
+        form {
+            width: 100%;
+            padding: 30px 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            font-family: "Inter", sans-serif;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-bottom: 5px;
+            font-weight: 500;
+            color: black;
+            font-weight: 350;
+            font-size: 0.9rem;
+
+        }
+
+        input, textarea {
+            padding: 10px;
+            font-size: 1rem;
+            resize: vertical;
+            font-family: "Inter", sans-serif;
+            border-radius: 0;
+            border: 1px solid rgb(141, 141, 141);
+        
+        }
+
+        textarea {
+            min-height: 120px;
+        }
+        
+        button {
+            padding: 16px 10px;
+            margin-top: 12px;
+            background: black;
+            border: 1px solid black;
+            font-size: 16px;
+            font-weight: 600;
+            color:white;
+            text-decoration: none;
+            letter-spacing: .5px;
+            display:inline-flex;
+            justify-content: center;
+            align-items: center;
+            font-family: "Inter", sans-serif;
+        }
+
+        button:hover {
+            background-color: darkgray;
+            font-family: "Inter", sans-serif;
+        }
+
+        @media (max-width: 600px) {
+            .contact-content h1 {
+                font-size: 2rem;
+            }
+            .contact-content h2 {
+                padding: 0 10px;
+            }
+        }
+        
+
+     </style>   
+    </head> 
+    
+    <body>
+        <header class="header">
+            <a href="index.html" class="logo">jareline <i>quiroz</i>.</a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <section class="contact"> 
+            <div class="contact-content">
+                <h1>Contact</h1>
+                <h2>If you'd like to find out more about my design process or connect with me,
+                    please fill out this brief form, and I'll be in touch shortly. Thank you!</h2>
+            </div>
+        </section>
+
+        <div class="container">
+            <form>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="First Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="Last Name" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" required></textarea>
+                </div> 
+                <button type="submit" >submit</button>
+            </form> 
+        </div>
+
+        <footer>
+           <hr> 
+            <div class="footer-container">
+                <p class="copyright">&copy; 2025 Jareline Quiroz</p>
+                    <div class="right">
+                        <a href="mailto:quirozjareline@gmail.com">quirozjareline@gmail.com</a>
+                        <a href="https://linkedin.com/">LinkedIn</a>
+                    </div>
+            </div>         
+        </footer>
+
+    </body>
+
+
+</html>
