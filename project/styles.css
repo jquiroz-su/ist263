@@ -21,6 +21,13 @@ body {
    font-weight: 450;
    text-decoration: none;
    margin: 15px;
+   white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.8rem;
+    }
 }
 
 nav a {
