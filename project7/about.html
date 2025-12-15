@@ -4,25 +4,49 @@
         <meta charset="utf-8">
         <title>Portfolio Website</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
         
         <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+       .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       }
         
         .about {
             width: 100%;
             margin: 60px 20px;
         }
 
-        .about img {
+        .main img {
             height: auto;
             width: 100%;
             max-width: 420px;
             margin: 10px;
+            display: block;
         }
 
         .text {
             flex: 1 1 450px;
             min-width: 280px;
-            
+            font-family: "Inter", sans-serif;
+            line-height: 1.5;  
+        }
+
+        h2 { 
+            font-weight: 600; 
         }
 
         .main {
@@ -38,7 +62,7 @@
             flex: 1 1 350px;
         }
          
-        @media (max-width: 765px) {
+        @media (max-width: 768px) {
             .main {
                 flex-direction: column;
                 align-items: center;
@@ -50,6 +74,9 @@
 
         nav {
             font-family: "Inter", sans-serif;
+            font-size: 16px;
+            padding: 10px;
+    
         }
 
         </style>   
@@ -68,21 +95,20 @@
 
         <section class="about">
             <div class="main">
-                <div class="container">
-                <img src="../project-images/aboutpage.png">
+                <img src="../project-images/aboutpage.png" alt="Jareline turning wooden bowl on lathe">
          
             <div class="text">
                 <h1> hi, i'm jareline.</h1>
                 <p>Thanks for checking out my website! I'm a second year industrial and interaction design student
                         at Syracuse University interested in UX design and web development.
                 </p>
-                <h2>How I got started</h2>
+                <h2>how I got started</h2>
                 <p> My love for design began long before my journey at Syracuse University - tinkering with objects
                     around the house and exploring creativity through apps like Roblox, as a kid. What started as curiosity
                     has grown into a passion for problem-solving and creating experiences that leave a positive impact for 
                     those around me.
                 </p>
-                <h2>A liitle about me</h2>
+                <h2>a little about me</h2>
                 <p>I was born and raised in New York City. The hustle and bustle of the city has always been something I've
                     gravitated towards, but I'm just as passionate about making design more enjoyable. When I'm not deisgning,
                     I love finetuning my woodworking skills and more recently, learning ceramics. I love going on roadtrips and
