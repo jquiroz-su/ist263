@@ -134,63 +134,66 @@
     </head> 
     
     <body>
-        <a href="#main-content" class="skip-link">Skip to main content</a>
-        <header class="header">
-            <a href="index.html" class="logo">jareline <i>quiroz</i>.</a>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
-            </nav>
-        </header>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-        <main id="main-content">
+    <header class="header">
+        <a href="index.html" class="logo">jareline <i>quiroz</i>.</a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main id="main-content">
         <section class="contact"> 
             <div class="contact-content">
                 <h1><i>Contact</i></h1>
-                <h2>If you'd like to find out more about my design process or connect with me,
-                    please fill out this brief form, and I'll be in touch shortly. Thank you!</h2>
+                <h2>
+                    If you'd like to find out more about my design process or connect with me,
+                    please fill out this brief form, and I'll be in touch shortly. Thank you!
+                </h2>
             </div>
         </section>
 
         <div class="container">
             <form action="https://formspree.io/f/movgbpee" method="POST">
+
                 <div class="form-row">
                     <div class="form-group">
                         <label for="firstname">First Name</label>
-                        <input type="text" name="First Name" required>
+                        <input type="text" id="firstname" name="firstname" required>
                     </div>
 
                     <div class="form-group">
                         <label for="lastname">Last Name</label>
-                        <input type="text" name="Last Name" required>
+                        <input type="text" id="lastname" name="lastname" required>
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" name="Email" required>
+                    <input type="email" id="email" name="email" required>
                 </div>
 
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea name="message" required></textarea>
-                </div> 
-                <button type="submit" >submit</button>
-            </form> 
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit">submit</button>
+            </form>
         </div>
+    </main>
 
-        <footer>
-           <hr> 
-            <div class="footer-container">
-                <p class="copyright">&copy; 2025 Jareline Quiroz</p>
-                    <div class="right">
-                        <a href="mailto:quirozjareline@gmail.com">quirozjareline@gmail.com</a>
-                        <a href="https://linkedin.com/">LinkedIn</a>
-                    </div>
+    <footer>
+        <hr> 
+        <div class="footer-container">
+            <p class="copyright">&copy; 2025 Jareline Quiroz</p>
+            <div class="right">
+                <a href="mailto:quirozjareline@gmail.com">quirozjareline@gmail.com</a>
+                <a href="https://linkedin.com/">LinkedIn</a>
             </div>
-            </main>         
-        </footer>
-
-    </body>
-</html>
+        </div>         
+    </footer>
+</body>
